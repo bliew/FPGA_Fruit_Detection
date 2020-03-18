@@ -17,7 +17,6 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
-
 def edgeDetection(path):
     fruitlist = os.listdir(path)
     for f in fruitlist[0:1] :
