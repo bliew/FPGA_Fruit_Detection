@@ -26,7 +26,7 @@ for fruit_dir_path in glob.glob("TrainingC/*"):
     for image_path in glob.glob(os.path.join(fruit_dir_path, "*.jpg")):
         image = cv2.imread(image_path, cv2.IMREAD_COLOR) #load a color image
         image = cv2.resize(image, (45, 45)) #resize image
-        image = cv2.imread(image_path,cv2.RGB2BGR)
+        image = cv2.imread(image_path,cv2.COLOR_RGB2BGR)
         fruit_images.append(image)
         labels.append(fruit_label)
         print(fruit_label)
