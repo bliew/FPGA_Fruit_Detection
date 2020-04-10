@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 scale = 1
 delta = 0
-ddepth = cv2.CV_16S
+depth = cv2.CV_16S
 
 def convert2gray(img_path):
     image = cv2.imread(img_path) #load a color image
@@ -17,12 +17,12 @@ def gaussianBlur(img):
     return blur_image
 
 def sobelx(img):
-    x_deriv = cv2.Sobel(img, ddepth, 1, 0, ksize=3, scale=scale, delta=delta, borderType=cv2.BORDER_DEFAULT)
+    x_deriv = cv2.Sobel(img, depth, 1, 0, ksize=3, scale=scale, delta=delta, borderType=cv2.BORDER_DEFAULT)
     abs_x_deriv = cv2.convertScaleAbs(x_deriv)
     return abs_x_deriv
 
 def sobely(img):
-    y_deriv = cv2.Sobel(img, ddepth, 0, 1, ksize=3, scale=scale, delta=delta, borderType=cv2.BORDER_DEFAULT)
+    y_deriv = cv2.Sobel(img, depth, 0, 1, ksize=3, scale=scale, delta=delta, borderType=cv2.BORDER_DEFAULT)
     abs_y_deriv = cv2.convertScaleAbs(y_deriv)
     return abs_y_deriv
 
@@ -32,7 +32,7 @@ def weightedsobel(abs_x, abs_y):
 
 
 if __name__ == "__main__":   
-    gray_im = convert2gray("TrainingC/Mango/13_100.jpg")
+    gray_im = convert2gray("15_100.jpg")
     gaussblur = gaussianBlur(gray_im)
     grad_x = sobelx(gaussblur)
     grad_y = sobely(gaussblur)
