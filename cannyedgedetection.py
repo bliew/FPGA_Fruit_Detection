@@ -1,6 +1,7 @@
 import cv2
 import sys
 import numpy
+import time
 import matplotlib.pyplot as plt
 
 scale = 1
@@ -32,11 +33,14 @@ def weightedsobel(abs_x, abs_y):
 
 
 if __name__ == "__main__":   
+    startcode = time.time()
     gray_im = convert2gray("15_100.jpg")
     gaussblur = gaussianBlur(gray_im)
     grad_x = sobelx(gaussblur)
     grad_y = sobely(gaussblur)
     sobelweight = weightedsobel(grad_x,grad_y)
+    endcode = time.time()
 
+    print("time elapsed = ", endcode - startcode)
     plt.imshow(sobelweight, cmap = 'gray')
     plt.show()
