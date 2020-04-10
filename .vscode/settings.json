@@ -2,5 +2,5 @@
     "python.linting.pylintArgs": [
         "--generate-members"
     ],
-    "python.pythonPath": "/Users/Breonna/Desktop/FPGA_Fruit_Detection/env/bin/python3.7",
+    "python.pythonPath": "env/bin/python",
 }
