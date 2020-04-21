@@ -1,0 +1,1280 @@
+
+*** Running vivado
+    with args -log design_1_ced_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ced_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_ced_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/canny_edge_detection'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_ced_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13364 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 475.152 ; gain = 101.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_ced_0_0' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ip/design_1_ced_0_0/synth/design_1_ced_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ced' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced.v:12]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/AXIvideo2Mat.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (1#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'RGB2Gray' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/RGB2Gray.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state7 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/RGB2Gray.v:88]
+INFO: [Synth 8-6157] synthesizing module 'ced_mac_muladd_8nbkb' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8nbkb.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter din2_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ced_mac_muladd_8nbkb_DSP48_0' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8nbkb.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ced_mac_muladd_8nbkb_DSP48_0' (2#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8nbkb.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ced_mac_muladd_8nbkb' (3#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8nbkb.v:33]
+INFO: [Synth 8-6157] synthesizing module 'ced_mac_muladd_8ncud' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8ncud.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter din2_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ced_mac_muladd_8ncud_DSP48_1' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8ncud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ced_mac_muladd_8ncud_DSP48_1' (4#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8ncud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ced_mac_muladd_8ncud' (5#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mac_muladd_8ncud.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'RGB2Gray' (6#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/RGB2Gray.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state8 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:89]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1_k_buf_dEe' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1_k_buf_dEe.v:53]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1_k_buf_dEe_ram' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1_k_buf_dEe.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1_k_buf_dEe.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1_k_buf_dEe_ram' (7#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1_k_buf_dEe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1_k_buf_dEe' (8#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1_k_buf_dEe.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ced_mux_32_8_1_1' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mux_32_8_1_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ced_mux_32_8_1_1' (9#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced_mux_32_8_1_1.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2003]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2005]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2007]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2009]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2011]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2013]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2015]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2017]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2019]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2095]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2097]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2099]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2101]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2103]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2173]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2175]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2177]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2179]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2181]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2183]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2185]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2187]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2377]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1' (10#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'duplicate' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/duplicate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/duplicate.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate' (11#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/duplicate.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D93' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state8 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:89]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1921]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1923]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1925]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1927]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1929]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1931]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1933]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1935]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1937]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2019]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2021]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2023]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2025]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2027]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2029]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2031]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2033]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2087]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2089]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2091]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2093]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2095]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2097]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2281]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D93' (12#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state8 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1932]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1934]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1936]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1938]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1940]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1942]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1944]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1946]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1948]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2030]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2032]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2034]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2036]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2038]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2040]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2042]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2094]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2096]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2098]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2100]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2102]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2104]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2106]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2108]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:2274]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D' (13#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:10]
+INFO: [Synth 8-6157] synthesizing module 'addSobel' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/addSobel.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/addSobel.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'addSobel' (14#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/addSobel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:77]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:256]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:282]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:308]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:370]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (15#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (16#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (17#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_RGB2GraEe0' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_RGB2GraEe0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_RGB2GraEe0_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_RGB2GraEe0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_RGB2GraEe0_shiftReg' (18#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_RGB2GraEe0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_RGB2GraEe0' (19#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_RGB2GraEe0.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2Ffa' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Ffa.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2Ffa_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Ffa.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2Ffa_shiftReg' (20#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Ffa.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2Ffa' (21#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Ffa.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_duplicaGfk' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_duplicaGfk.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_duplicaGfk_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_duplicaGfk.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_duplicaGfk_shiftReg' (22#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_duplicaGfk.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_duplicaGfk' (23#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_duplicaGfk.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2Hfu' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Hfu.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2Hfu_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Hfu.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2Hfu_shiftReg' (24#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Hfu.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2Hfu' (25#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2Hfu.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2IfE' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2IfE.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Filter2IfE_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2IfE.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2IfE_shiftReg' (26#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2IfE.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Filter2IfE' (27#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Filter2IfE.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_addSobeJfO' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_addSobeJfO.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_addSobeJfO_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_addSobeJfO.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_addSobeJfO_shiftReg' (28#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_addSobeJfO.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_addSobeJfO' (29#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_addSobeJfO.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIKfY' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Mat2AXIKfY.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIKfY_shiftReg' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Mat2AXIKfY.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIKfY_shiftReg' (30#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Mat2AXIKfY.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIKfY' (31#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/start_for_Mat2AXIKfY.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'ced' (32#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/ced.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ced_0_0' (33#1) [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ip/design_1_ced_0_0/synth/design_1_ced_0_0.v:58]
+WARNING: [Synth 8-3331] design Filter2D_1_k_buf_dEe has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 556.082 ; gain = 182.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 556.082 ; gain = 182.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 556.082 ; gain = 182.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ip/design_1_ced_0_0/constraints/ced_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ip/design_1_ced_0_0/constraints/ced_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/cedRTL/cedRTL.runs/design_1_ced_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/cedRTL/cedRTL.runs/design_1_ced_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 919.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 920.711 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 922.211 ; gain = 2.320
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 922.211 ; gain = 548.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 922.211 ; gain = 548.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/cedRTL/cedRTL.runs/design_1_ced_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 922.211 ; gain = 548.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond2_fu_317_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_329_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond3_fu_203_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_215_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_2552_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1070]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_2558_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1071]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_3_addr_reg_2568_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1072]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_4_addr_reg_2574_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1073]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_2580_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1074]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_3_addr_reg_2586_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1075]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_4_addr_reg_2592_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1076]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_2598_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2546_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:1077]
+INFO: [Synth 8-4471] merging register 'tmp48_reg_2643_reg[9:0]' into 'tmp40_reg_2621_reg[9:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2235]
+INFO: [Synth 8-4471] merging register 'tmp56_reg_2665_reg[9:0]' into 'tmp40_reg_2621_reg[9:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2253]
+INFO: [Synth 8-4471] merging register 'p_Val2_s_reg_2670_reg[9:0]' into 'tmp40_reg_2621_reg[9:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2355]
+INFO: [Synth 8-4471] merging register 'p_Val2_15_reg_2685_reg[9:0]' into 'tmp40_reg_2621_reg[9:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2359]
+INFO: [Synth 8-4471] merging register 'p_Val2_19_reg_2700_reg[9:0]' into 'tmp40_reg_2621_reg[9:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D_1.v:2363]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond462_i_fu_613_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_27_fu_607_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_691_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_243_0_1_fu_659_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_31_fu_653_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_262_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_274_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_2276_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1004]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_2282_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1005]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_3_addr_reg_2292_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1006]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_4_addr_reg_2298_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1007]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_2304_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1008]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_3_addr_reg_2310_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1009]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_4_addr_reg_2316_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1010]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_2322_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2270_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:1011]
+INFO: [Synth 8-4471] merging register 'tmp_65_reg_2393_reg[0:0]' into 'tmp_56_reg_2367_reg[0:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2141]
+INFO: [Synth 8-4471] merging register 'tmp_73_reg_2419_reg[0:0]' into 'tmp_56_reg_2367_reg[0:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D93.v:2155]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond462_i_fu_587_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_7_fu_581_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_659_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_102_0_1_fu_633_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_627_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_2367_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1029]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_2373_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1030]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_3_addr_reg_2383_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1031]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_4_addr_reg_2389_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1032]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_2395_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1033]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_3_addr_reg_2401_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1034]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_4_addr_reg_2407_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1035]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_2413_reg[6:0]' into 'k_buf_0_val_3_addr_reg_2361_reg[6:0]' [d:/cedRTL/cedRTL.srcs/sources_1/bd/design_1/ipshared/f12b/hdl/verilog/Filter2D.v:1036]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond462_i_fu_611_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_15_fu_605_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_689_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_102_0_1_fu_657_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_20_fu_651_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_251_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_263_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_196_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_208_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_220_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 922.211 ; gain = 548.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     22 Bit       Adders := 3     
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 3     
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 12    
+	   3 Input     10 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 12    
+	   5 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 3     
+	   6 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 19    
+	   2 Input      2 Bit       Adders := 37    
++---XORs : 
+	   2 Input      2 Bit         XORs := 5     
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	               24 Bit    Registers := 9     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 223   
+	                7 Bit    Registers := 30    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 56    
+	                1 Bit    Registers := 210   
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 9     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 207   
+	   2 Input      7 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 19    
+	   4 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 233   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 7     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 28    
+Module RGB2Gray 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module Filter2D_1_k_buf_dEe_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ced_mux_32_8_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module Filter2D_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     22 Bit       Adders := 3     
+	   2 Input     19 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      2 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 48    
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 28    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module duplicate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module Filter2D93 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 9     
+	   3 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
+	   5 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	                8 Bit    Registers := 42    
+	                7 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 25    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module Filter2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
+	   6 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      2 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	                8 Bit    Registers := 48    
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 28    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module addSobel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 17    
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_RGB2GraEe0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_RGB2GraEe0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Filter2Ffa_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Filter2Ffa 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_duplicaGfk_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_duplicaGfk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Filter2Hfu_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Filter2Hfu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Filter2IfE_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Filter2IfE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_addSobeJfO_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_addSobeJfO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIKfY_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIKfY 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "exitcond_fu_329_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_317_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_215_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_fu_203_p2" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP r_V_1_reg_300_reg, operation Mode is: (A*(B:0x4d))'.
+DSP Report: register r_V_1_reg_300_reg is absorbed into DSP r_V_1_reg_300_reg.
+DSP Report: operator r_V_1_fu_231_p2 is absorbed into DSP r_V_1_reg_300_reg.
+DSP Report: Generating DSP ced_mac_muladd_8nbkb_U11/ced_mac_muladd_8nbkb_DSP48_0_U/p, operation Mode is: PCIN+A2*(B:0x1d).
+DSP Report: register A is absorbed into DSP ced_mac_muladd_8nbkb_U11/ced_mac_muladd_8nbkb_DSP48_0_U/p.
+DSP Report: operator ced_mac_muladd_8nbkb_U11/ced_mac_muladd_8nbkb_DSP48_0_U/p is absorbed into DSP ced_mac_muladd_8nbkb_U11/ced_mac_muladd_8nbkb_DSP48_0_U/p.
+DSP Report: operator ced_mac_muladd_8nbkb_U11/ced_mac_muladd_8nbkb_DSP48_0_U/m is absorbed into DSP ced_mac_muladd_8nbkb_U11/ced_mac_muladd_8nbkb_DSP48_0_U/p.
+DSP Report: Generating DSP ced_mac_muladd_8ncud_U12/ced_mac_muladd_8ncud_DSP48_1_U/p, operation Mode is: C+A2*(B:0x96).
+DSP Report: register A is absorbed into DSP ced_mac_muladd_8ncud_U12/ced_mac_muladd_8ncud_DSP48_1_U/p.
+DSP Report: operator ced_mac_muladd_8ncud_U12/ced_mac_muladd_8ncud_DSP48_1_U/p is absorbed into DSP ced_mac_muladd_8ncud_U12/ced_mac_muladd_8ncud_DSP48_1_U/p.
+DSP Report: operator ced_mac_muladd_8ncud_U12/ced_mac_muladd_8ncud_DSP48_1_U/m is absorbed into DSP ced_mac_muladd_8ncud_U12/ced_mac_muladd_8ncud_DSP48_1_U/p.
+INFO: [Synth 8-5544] ROM "tmp_27_fu_607_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_691_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond462_i_fu_613_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_31_fu_653_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_243_0_1_fu_659_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_274_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_262_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_7_fu_581_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_659_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond462_i_fu_587_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_627_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_102_0_1_fu_633_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_15_fu_605_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond461_i_fu_689_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond462_i_fu_611_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_20_fu_651_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_102_0_1_fu_657_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_251_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_263_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_208_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_196_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_220_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port image_in_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D93_U0/k_buf_0_val_3_addr_reg_2270_reg[1]' (FDE) to 'inst/Filter2D93_U0/tmp_49_reg_2252_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D93_U0/k_buf_0_val_3_addr_reg_2270_reg[0]' (FDE) to 'inst/Filter2D93_U0/tmp_49_reg_2252_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_U0/k_buf_0_val_3_addr_reg_2361_reg[1]' (FDE) to 'inst/Filter2D_U0/tmp_104_reg_2343_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_U0/k_buf_0_val_3_addr_reg_2361_reg[0]' (FDE) to 'inst/Filter2D_U0/tmp_104_reg_2343_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/row_assign_12_0_1_t_reg_2493_reg[1]' (FDE) to 'inst/Filter2D_1_U0/tmp_77_reg_2486_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[9]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp_77_reg_2486_reg[0]' (FDE) to 'inst/Filter2D_1_U0/row_assign_12_0_2_t_reg_2500_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D93_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/duplicate_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D_U0/ap_done_reg_reg)
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[0]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[1]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[2]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[3]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[4]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[5]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[6]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[7]' (FD) to 'inst/Filter2D_1_U0/tmp40_reg_2621_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D_1_U0/\tmp40_reg_2621_reg[8] )
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D93_U0/row_assign_8_0_2_t_reg_2232_reg[0]' (FDE) to 'inst/Filter2D93_U0/tmp_37_reg_2225_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_U0/tmp_100_reg_2309_reg[0]' (FDE) to 'inst/Filter2D_U0/row_assign_8_0_2_t_reg_2323_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_U0/tmp_100_reg_2309_reg[1]' (FDE) to 'inst/Filter2D_U0/row_assign_8_0_1_t_reg_2316_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/RGB2Gray_U0/ap_done_reg_reg)
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[20]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[19]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[18]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[17]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[16]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[15]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[13]' (FDE) to 'inst/Filter2D_1_U0/tmp_96_reg_2710_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[14]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_20_reg_2705_reg[7]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_19_reg_2700_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[20]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[19]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[18]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[17]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[16]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[15]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[13]' (FDE) to 'inst/Filter2D_1_U0/tmp_84_reg_2680_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[14]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_12_reg_2675_reg[7]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_s_reg_2670_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[20]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[19]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[18]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[17]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[16]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[15]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[13]' (FDE) to 'inst/Filter2D_1_U0/tmp_90_reg_2695_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[14]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Filter2D_1_U0/p_Val2_16_reg_2690_reg[7]' (FDE) to 'inst/Filter2D_1_U0/p_Val2_15_reg_2685_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/addSobel_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Filter2D93_U0/\tmp_56_reg_2367_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Mat2AXIvideo_U0/ap_done_reg_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 922.211 ; gain = 548.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------------+----------------------------------------------------+----------------+----------------------+----------------------------+
+|Module Name        | RTL Object                                         | Inference      | Size (Depth x Width) | Primitives                 | 
++-------------------+----------------------------------------------------+----------------+----------------------+----------------------------+
+|inst/Filter2D_1_U0 | k_buf_0_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_0_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_0_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_1_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_1_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_1_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_2_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_2_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_2_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_0_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_0_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_0_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_1_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_1_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_1_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_2_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_2_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D93_U0 | k_buf_2_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_0_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_0_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_0_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_1_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_1_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_1_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_2_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_2_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_2_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
++-------------------+----------------------------------------------------+----------------+----------------------+----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB2Gray    | (A*(B:0x4d))'    | 8      | 7      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|RGB2Gray    | PCIN+A2*(B:0x1d) | 9      | 6      | -      | -      | 15     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB2Gray    | C+A2*(B:0x96)    | 9      | 9      | 16     | -      | 16     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:23 . Memory (MB): peak = 962.008 ; gain = 588.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 990.555 ; gain = 617.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------------+----------------------------------------------------+----------------+----------------------+----------------------------+
+|Module Name        | RTL Object                                         | Inference      | Size (Depth x Width) | Primitives                 | 
++-------------------+----------------------------------------------------+----------------+----------------------+----------------------------+
+|inst/Filter2D_1_U0 | k_buf_0_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_0_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_0_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_1_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_1_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_1_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_2_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_2_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_1_U0 | k_buf_2_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_0_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_0_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_0_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_1_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_1_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_1_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_2_val_3_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_2_val_4_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
+|inst/Filter2D_U0   | k_buf_2_val_5_U/Filter2D_1_k_buf_dEe_ram_U/ram_reg | User Attribute | 128 x 8              | RAM64X1D x 4  RAM64M x 4   | 
++-------------------+----------------------------------------------------+----------------+----------------------+----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:35 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:35 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   120|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |LUT1      |    20|
+|6     |LUT2      |   198|
+|7     |LUT3      |   466|
+|8     |LUT4      |   470|
+|9     |LUT5      |   586|
+|10    |LUT6      |   943|
+|11    |RAM64M    |   108|
+|12    |RAM64X1D  |   108|
+|13    |FDRE      |  2416|
+|14    |FDSE      |   118|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-----------------------------+------+
+|      |Instance                               |Module                       |Cells |
++------+---------------------------------------+-----------------------------+------+
+|1     |top                                    |                             |  5556|
+|2     |  inst                                 |ced                          |  5556|
+|3     |    AXIvideo2Mat_U0                    |AXIvideo2Mat                 |   476|
+|4     |    Filter2D93_U0                      |Filter2D93                   |  1213|
+|5     |      k_buf_0_val_3_U                  |Filter2D_1_k_buf_dEe_80      |    33|
+|6     |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_97  |    33|
+|7     |      k_buf_0_val_4_U                  |Filter2D_1_k_buf_dEe_81      |    32|
+|8     |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_96  |    32|
+|9     |      k_buf_0_val_5_U                  |Filter2D_1_k_buf_dEe_82      |    48|
+|10    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_95  |    48|
+|11    |      k_buf_1_val_3_U                  |Filter2D_1_k_buf_dEe_83      |    32|
+|12    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_94  |    32|
+|13    |      k_buf_1_val_4_U                  |Filter2D_1_k_buf_dEe_84      |    38|
+|14    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_93  |    38|
+|15    |      k_buf_1_val_5_U                  |Filter2D_1_k_buf_dEe_85      |    48|
+|16    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_92  |    48|
+|17    |      k_buf_2_val_3_U                  |Filter2D_1_k_buf_dEe_86      |    33|
+|18    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_91  |    33|
+|19    |      k_buf_2_val_4_U                  |Filter2D_1_k_buf_dEe_87      |    41|
+|20    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_90  |    41|
+|21    |      k_buf_2_val_5_U                  |Filter2D_1_k_buf_dEe_88      |    51|
+|22    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_89  |    51|
+|23    |    Filter2D_1_U0                      |Filter2D_1                   |  1196|
+|24    |      k_buf_0_val_3_U                  |Filter2D_1_k_buf_dEe_62      |    44|
+|25    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_79  |    44|
+|26    |      k_buf_0_val_4_U                  |Filter2D_1_k_buf_dEe_63      |    35|
+|27    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_78  |    35|
+|28    |      k_buf_0_val_5_U                  |Filter2D_1_k_buf_dEe_64      |    57|
+|29    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_77  |    57|
+|30    |      k_buf_1_val_3_U                  |Filter2D_1_k_buf_dEe_65      |    43|
+|31    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_76  |    43|
+|32    |      k_buf_1_val_4_U                  |Filter2D_1_k_buf_dEe_66      |    33|
+|33    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_75  |    33|
+|34    |      k_buf_1_val_5_U                  |Filter2D_1_k_buf_dEe_67      |    56|
+|35    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_74  |    56|
+|36    |      k_buf_2_val_3_U                  |Filter2D_1_k_buf_dEe_68      |    43|
+|37    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_73  |    43|
+|38    |      k_buf_2_val_4_U                  |Filter2D_1_k_buf_dEe_69      |    32|
+|39    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_72  |    32|
+|40    |      k_buf_2_val_5_U                  |Filter2D_1_k_buf_dEe_70      |    73|
+|41    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_71  |    73|
+|42    |    Filter2D_U0                        |Filter2D                     |  1200|
+|43    |      k_buf_0_val_3_U                  |Filter2D_1_k_buf_dEe         |    33|
+|44    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_61  |    33|
+|45    |      k_buf_0_val_4_U                  |Filter2D_1_k_buf_dEe_46      |    39|
+|46    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_60  |    39|
+|47    |      k_buf_0_val_5_U                  |Filter2D_1_k_buf_dEe_47      |    57|
+|48    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_59  |    57|
+|49    |      k_buf_1_val_3_U                  |Filter2D_1_k_buf_dEe_48      |    32|
+|50    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_58  |    32|
+|51    |      k_buf_1_val_4_U                  |Filter2D_1_k_buf_dEe_49      |    33|
+|52    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_57  |    33|
+|53    |      k_buf_1_val_5_U                  |Filter2D_1_k_buf_dEe_50      |    56|
+|54    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_56  |    56|
+|55    |      k_buf_2_val_3_U                  |Filter2D_1_k_buf_dEe_51      |    32|
+|56    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_55  |    32|
+|57    |      k_buf_2_val_4_U                  |Filter2D_1_k_buf_dEe_52      |    32|
+|58    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram_54  |    32|
+|59    |      k_buf_2_val_5_U                  |Filter2D_1_k_buf_dEe_53      |    73|
+|60    |        Filter2D_1_k_buf_dEe_ram_U     |Filter2D_1_k_buf_dEe_ram     |    73|
+|61    |    Mat2AXIvideo_U0                    |Mat2AXIvideo                 |   198|
+|62    |    RGB2Gray_U0                        |RGB2Gray                     |    85|
+|63    |      ced_mac_muladd_8nbkb_U11         |ced_mac_muladd_8nbkb         |     1|
+|64    |        ced_mac_muladd_8nbkb_DSP48_0_U |ced_mac_muladd_8nbkb_DSP48_0 |     1|
+|65    |      ced_mac_muladd_8ncud_U12         |ced_mac_muladd_8ncud         |     5|
+|66    |        ced_mac_muladd_8ncud_DSP48_1_U |ced_mac_muladd_8ncud_DSP48_1 |     5|
+|67    |    addSobel_U0                        |addSobel                     |   128|
+|68    |    dsta_data_stream_0_s_U             |fifo_w8_d2_A                 |    49|
+|69    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_45     |    40|
+|70    |    dsta_data_stream_1_s_U             |fifo_w8_d2_A_0               |    49|
+|71    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_44     |    40|
+|72    |    dsta_data_stream_2_s_U             |fifo_w8_d2_A_1               |    49|
+|73    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_43     |    40|
+|74    |    dstb_data_stream_0_s_U             |fifo_w8_d2_A_2               |    33|
+|75    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_42     |    24|
+|76    |    dstb_data_stream_1_s_U             |fifo_w8_d2_A_3               |    33|
+|77    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_41     |    24|
+|78    |    dstb_data_stream_2_s_U             |fifo_w8_d2_A_4               |    33|
+|79    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_40     |    24|
+|80    |    dstc_data_stream_0_s_U             |fifo_w8_d2_A_5               |    33|
+|81    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_39     |    23|
+|82    |    dstc_data_stream_1_s_U             |fifo_w8_d2_A_6               |    34|
+|83    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_38     |    23|
+|84    |    dstc_data_stream_2_s_U             |fifo_w8_d2_A_7               |    33|
+|85    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_37     |    23|
+|86    |    dstd_data_stream_0_s_U             |fifo_w8_d2_A_8               |    26|
+|87    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_36     |    16|
+|88    |    dstd_data_stream_1_s_U             |fifo_w8_d2_A_9               |    26|
+|89    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_35     |    16|
+|90    |    dstd_data_stream_2_s_U             |fifo_w8_d2_A_10              |    26|
+|91    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_34     |    16|
+|92    |    dste_data_stream_0_s_U             |fifo_w8_d2_A_11              |    33|
+|93    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_33     |    24|
+|94    |    dste_data_stream_1_s_U             |fifo_w8_d2_A_12              |    33|
+|95    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_32     |    24|
+|96    |    dste_data_stream_2_s_U             |fifo_w8_d2_A_13              |    33|
+|97    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_31     |    24|
+|98    |    dup_1_data_stream_0_U              |fifo_w8_d2_A_14              |    50|
+|99    |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_30     |    41|
+|100   |    dup_1_data_stream_1_U              |fifo_w8_d2_A_15              |    51|
+|101   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_29     |    41|
+|102   |    dup_1_data_stream_2_U              |fifo_w8_d2_A_16              |    50|
+|103   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_28     |    41|
+|104   |    dup_2_data_stream_0_U              |fifo_w8_d2_A_17              |    50|
+|105   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_27     |    41|
+|106   |    dup_2_data_stream_1_U              |fifo_w8_d2_A_18              |    50|
+|107   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_26     |    41|
+|108   |    dup_2_data_stream_2_U              |fifo_w8_d2_A_19              |    50|
+|109   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_25     |    41|
+|110   |    duplicate_U0                       |duplicate                    |    63|
+|111   |    src_data_stream_0_V_U              |fifo_w8_d2_A_20              |    34|
+|112   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_24     |    25|
+|113   |    src_data_stream_1_V_U              |fifo_w8_d2_A_21              |    34|
+|114   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg_23     |    25|
+|115   |    src_data_stream_2_V_U              |fifo_w8_d2_A_22              |    34|
+|116   |      U_fifo_w8_d2_A_ram               |fifo_w8_d2_A_shiftReg        |    25|
+|117   |    start_for_Filter2Ffa_U             |start_for_Filter2Ffa         |    10|
+|118   |    start_for_Filter2Hfu_U             |start_for_Filter2Hfu         |    10|
+|119   |    start_for_Filter2IfE_U             |start_for_Filter2IfE         |     9|
+|120   |    start_for_Mat2AXIKfY_U             |start_for_Mat2AXIKfY         |     9|
+|121   |    start_for_RGB2GraEe0_U             |start_for_RGB2GraEe0         |    10|
+|122   |    start_for_addSobeJfO_U             |start_for_addSobeJfO         |    10|
+|123   |    start_for_duplicaGfk_U             |start_for_duplicaGfk         |    13|
++------+---------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:36 . Memory (MB): peak = 1023.848 ; gain = 650.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:23 . Memory (MB): peak = 1023.848 ; gain = 284.266
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:37 . Memory (MB): peak = 1023.848 ; gain = 650.395
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 339 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1023.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 216 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 108 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 108 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+244 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 1023.848 ; gain = 661.863
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1023.848 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/cedRTL/cedRTL.runs/design_1_ced_0_0_synth_1/design_1_ced_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_ced_0_0, cache-ID = cac6066e570774c6
+INFO: [Coretcl 2-1174] Renamed 122 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1023.848 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/cedRTL/cedRTL.runs/design_1_ced_0_0_synth_1/design_1_ced_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_ced_0_0_utilization_synth.rpt -pb design_1_ced_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 21 16:50:41 2020...
